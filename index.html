@@ -1,75 +1,123 @@
 <!DOCTYPE html>
 <html>
-<meta charset="UTF-8">
+  <meta charset="UTF-8" />
 
-<style>
-    .footer {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        /* background-color: red; */
-        color: black;
-        text-align: center;
-        font-size: 0.75rem;
+  <style>
+    footer {
+      font-size: 0.75rem;
     }
 
-    .footer red {
-        color: red;
+    footer red {
+      color: red;
     }
 
     ul.navbar {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #333;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
     }
 
     li.navbar {
-        float: left;
+      float: left;
     }
 
     li.navbar a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
     }
 
     /* Change the link color to #111 (black) on hover */
     li a:hover {
-        background-color: #111;
+      background-color: #111;
     }
-</style>
 
-<body style="text-align: center; font-family:Arial, Helvetica, sans-serif;">
-    <h1>Dan's Website</h1>
+    @media only screen and (min-width: 992px) {
+      .device-padded {
+        margin-left: 20%;
+        margin-right: 20%;
+      }
+    }
 
-    <ul class="navbar">
-        <li class="navbar"><a href="index.html">Blog</a></li>
-        <li class="navbar"><a href="calc.html">Calculator</a></li>
-        <li class="navbar"><a href="about.html">About</a></li>
-    </ul>
+    .flex-wrapper {
+      display: flex;
+      min-height: 97vh;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  </style>
 
-    <br>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <div style="text-align: justify; width: 60%; padding-left: 20%">
-        <h3>2024-09-13</h3>
+  <div class="flex-wrapper">
+    <div class="container">
+      <body
+        style="
+          text-align: center;
+          font-family: Verdana, sans-serif;
+          font-size: 15px;
+          line-height: 1.5;
+        "
+      >
+        <h1>Dan's Website</h1>
 
-        <p>Hello, I am a computer engineer that typically works on embedded Linux devices. I have wanted to learn how to build a website for some time now. I believe the best way to learn is to do, so I will be attempting to document my progress and make various features around this content. Something of a self-licking ice cream cone.</p>
+        <ul class="navbar">
+          <li class="navbar"><a href="index.html">Blog</a></li>
+          <li class="navbar"><a href="calc.html">Calculator</a></li>
+          <li class="navbar"><a href="about.html">About</a></li>
+        </ul>
 
-        <p>I am aware of a myriad of web development frameworks, node.js, databases, dynamic content, etc. that all help speed up the development of building a website and its features, but I'm just beginning on my understanding of web development. I plan on learning as much as I can about each of these, but I also want to do this the right way and start from the ground up. As far as I can tell, the web is built on HTML and CSS, so I thought that would be a good place to start. I am dating myself here, but I also have some experience with HTML from customizing my MySpace page back in the day. My online friends had to know which Alient Ant Farm lyrics best represented my current mood.</p>
+        <br />
 
-        <p>My goal is to eventually get OK and somewhat bored of writing my own HTML/CSS and find something that can do most of this work for me. I'm assuming there are tools out there to help you get formatting right for different devices (or something called a ViewPort?). So for now, I will be writing a lot of HTML/CSS and experimenting on how best utilize it. I also think it means faster load times compared to website with much more features. This is something I plan on keeping in mind during my progress, least I end up creating a real <a href="https://idlewords.com/talks/website_obesity.htm">chonk of a website</a>.</p>
+        <div class="device-padded" style="text-align: justify; float: left">
+          <h3>2024-09-13</h3>
+
+          <p>
+            Hello, I am a computer engineer that typically works on embedded
+            Linux devices. I have wanted to learn how to build a website for
+            some time now. I believe the best way to learn is to do, so I will
+            be attempting to document my progress and make various features
+            around this content. Something of a self-licking ice cream cone.
+          </p>
+
+          <p>
+            I am aware of a myriad of web development frameworks, node.js,
+            databases, dynamic content, etc. that all help speed up the
+            development of building a website and its features, but I'm just
+            beginning on my understanding of web development. I plan on learning
+            as much as I can about each of these, but I also want to do this the
+            right way and start from the ground up. As far as I can tell, the
+            web is built on HTML and CSS, so I thought that would be a good
+            place to start. I am dating myself here, but I also have some
+            experience with HTML from customizing my MySpace page back in the
+            day. My online friends had to know which Alient Ant Farm lyrics best
+            represented my current mood.
+          </p>
+
+          <p>
+            My goal is to eventually get OK and somewhat bored of writing my own
+            HTML/CSS and find something that can do most of this work for me.
+            I'm assuming there are tools out there to help you get formatting
+            right for different devices (or something called a ViewPort?). So
+            for now, I will be writing a lot of HTML/CSS and experimenting on
+            how best utilize it. I also think it means faster load times
+            compared to websites that utilize lots of third-party libraries for
+            fast feature development. Nothing against those websites, but this
+            is something I plan on keeping in mind during my progress, least I
+            end up creating a real
+            <a href="https://idlewords.com/talks/website_obesity.htm"
+              >chonk of a website</a
+            >.
+          </p>
+        </div>
+      </body>
     </div>
-
-    <div class="footer">
-        <p>Thanks GitHub Pages for hosting this website <red>&#10084;</red>
-        </p>
-    </div>
-
-</body>
-
+    <footer>
+      Thanks GitHub Pages for hosting this website <red>&#10084;</red>
+    </footer>
+  </div>
 </html>
