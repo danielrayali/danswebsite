@@ -10,6 +10,7 @@
   - Moved the footer out of the body, used a flexbox wrapper around a body div and a footer div. Set the height to the flex box just enough to not cause a scroll bar to appear on my screen
   - Also, removed top margin and adjusted the flexbox view height of the body, since that still had a margin of 8.
 - Make a real calculator
+- Probably shouldn't let users be able to arbitrarily test whether files exist on your filesystem in the `read_path` function
 - Wireshark shows some trailing newlines and things. FIgure out why and if we should and can remove it:
 
 ![Trailing Characters](image.png)

@@ -6,8 +6,8 @@ use rocket::tokio::fs;
 use std::path::Path;
 
 #[get("/")]
-async fn index() -> Option<NamedFile> {
-    NamedFile::open(Path::new("blog.html")).await.ok()
+async fn index() -> NamedFile {
+    NamedFile::open(Path::new("blog.html")).await.unwrap()
 }
 
 #[get("/<name>")]

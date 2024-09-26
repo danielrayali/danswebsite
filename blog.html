@@ -75,6 +75,34 @@
         <br />
 
         <div class="device-padded" style="text-align: justify; float: left">
+          <h3>2024-09-25</h3>
+
+          <p>Houston, we have liftoff... &#128640;</p>
+
+          <p>
+            My first pass at the web application server is complete. It uses
+            Rocket, which seems to be the de-facto framework for server-side
+            programming in Rust. I initially set up a simple file server that
+            also sent the "Content-Type" header field in the HTTP response. I
+            quickly changed that to use the segment of the URL passed by the
+            user to return content.
+          </p>
+
+          <p>
+            Initially, it still just grabs the location passed by the user
+            (everything after danielali.com), adds ".html" and attempts to read
+            that file. If it doesn't exist, you get 404'd, if it does, you get
+            some fresh website content. So now you should be able to go to
+            danielali.com/blog/ and you'll get the contents of what used to be
+            blog.html.
+          </p>
+
+          <p>
+            I'm sure all this will change once I start actually attempting to
+            serve dynamic HTML content, like I described in my last post. That's
+            all I have steam for right now. Lots to do. I should really go back
+            and edit old posts.
+          </p>
           <h3>2024-09-24</h3>
 
           <p>
