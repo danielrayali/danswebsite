@@ -1,0 +1,98 @@
+{% extends "base" %} {% block content %}
+
+<div class="device-padded" style="text-align: justify; float: left">
+  <h3>2024-09-25</h3>
+
+  <p>Houston, we have liftoff... &#128640;</p>
+
+  <p>
+    My first pass at the web application server is complete. It uses Rocket,
+    which seems to be the de-facto framework for server-side programming in
+    Rust. I initially set up a simple file server that also sent the
+    "Content-Type" header field in the HTTP response. I quickly changed that to
+    use the segment of the URL passed by the user to return content.
+  </p>
+
+  <p>
+    Initially, it still just grabs the location passed by the user (everything
+    after danielali.com), adds ".html" and attempts to read that file. If it
+    doesn't exist, you get 404'd, if it does, you get some fresh website
+    content. So now you should be able to go to danielali.com/blog/ and you'll
+    get the contents of what used to be blog.html.
+  </p>
+
+  <p>
+    I'm sure all this will change once I start actually attempting to serve
+    dynamic HTML content, like I described in my last post. That's all I have
+    steam for right now. Lots to do. I should really go back and edit old posts.
+  </p>
+  <h3>2024-09-24</h3>
+
+  <p>
+    I have a few ideas in mind for what next to program. They include writing a
+    4-function calculator and an "About" page. For the "About" page I want it to
+    show the content from my first post. I'm not a D.R.Y. principal zealot, but
+    I'd rather not copy/paste that content, I'd rather it just source it from
+    the same place. We have technology. It can be done.
+  </p>
+
+  <p>
+    Additionally, I noticed when switching between the pages I have, the
+    navigation must be represented in each page. This is another minor peice of
+    code I'd rather not copy/paste everywhere. I'm sure I'll run through five or
+    six different "themes" for the navigation bar in a given day, depending on
+    how much caffine I've had. &#9749;
+  </p>
+
+  <p>
+    In my humble opinion the navigation portion seems like the most important
+    feature to get right first. This will also help craft the about page. While
+    I'm sure everyone is constantly hitting refresh to use the calculator but
+    I'm afraid it will have to wait.
+  </p>
+
+  <p>
+    <i>Some time later...</i>
+  </p>
+
+  <p>
+    Holy moly, creating re-usable HTML is not a simple thing. I learned that I
+    would probably have to server a dynamic HTML page. This means setting up a
+    web application in addition to a web server (two processes already???). The
+    web application will piece together the request page and send it to the web
+    server to return to the user. This means diving into server-side programming
+    almost right away, which I did not anticipate.
+  </p>
+
+  <p>
+    Rust has always been something I've flirted with, but never actually dated
+    in a professional sense. I want to use Rust as my back-end language, even
+    though MSDN recommends Python + Django because its cool. After flippantly
+    deciding which language I wanted to focus on, I asked Perplexity AI to write
+    a Rust-based web application for a blogging website. To me, what is useful
+    about this is knowning what a code base that does this generally looks like.
+    I learned in its response that it anticipated using a HTML template engine
+    called Tera. Now we're cutting through all that other stuff to get to what I
+    really wanted; dynamic HTML pages.
+  </p>
+
+  <p>
+    As an aside, I wonder too if this means I can't just use GitHub Pages to
+    serve up some static webpages &#128577;. My guess is GitHub would probably
+    not host a bunch of custom binaries serving files from their servers. So
+    long free hosting...
+  </p>
+
+  <p>
+    I installed Rust on my Windows 11 laptop and started putting an application
+    together. I will update on my progress, but it won't be reflected until I
+    can figure out what I have to do for hosting. Running my own server would be
+    cool though.
+  </p>
+
+  <h3>2024-09-13</h3>
+
+  {% include "firstpost" %}
+</div>
+
+{% endblock %}

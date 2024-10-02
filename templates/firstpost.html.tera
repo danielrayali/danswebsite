@@ -1,0 +1,35 @@
+{% block firstpost %}
+<p>
+  Hello, I am a computer engineer that typically works on embedded Linux
+  devices. I have wanted to learn how to build a website for some time now. I
+  believe the best way to learn is to do, so I will be attempting to document my
+  progress and make various features around this content. Something of a
+  self-licking ice cream cone.
+</p>
+
+<p>
+  I am aware of a myriad of web development frameworks, node.js, databases,
+  dynamic content, etc. that all help speed up the development of building a
+  website and its features, but I'm just beginning on my understanding of web
+  development. I plan on learning as much as I can about each of these, but I
+  also want to do this the right way and start from the ground up. As far as I
+  can tell, the web is built on HTML and CSS, so I thought that would be a good
+  place to start. I am dating myself here, but I also have some experience with
+  HTML from customizing my MySpace page back in the day. My online friends had
+  to know which Alient Ant Farm lyrics best represented my current mood.
+</p>
+
+<p>
+  My goal is to eventually get OK and somewhat bored of writing my own HTML/CSS
+  and find something that can do most of this work for me. I'm assuming there
+  are tools out there to help you get formatting right for different devices (or
+  something called a ViewPort?). So for now, I will be writing a lot of HTML/CSS
+  and experimenting on how best utilize it. I also think it means faster load
+  times compared to websites that utilize lots of third-party libraries for fast
+  feature development. Nothing against those websites, but this is something I
+  plan on keeping in mind during my progress, least I end up creating a real
+  <a href="https://idlewords.com/talks/website_obesity.htm"
+    >chonk of a website</a
+  >.
+</p>
+{% endblock %}

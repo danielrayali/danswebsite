@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    {{dansstyle}}
+  </style>
+
+  <meta
+    charset="UTF-8"
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <div class="flex-wrapper">
+    <div class="container">
+      <body
+        style="
+          text-align: center;
+          font-family: Verdana, sans-serif;
+          font-size: 15px;
+          line-height: 1.5;
+          margin-top: 0;
+        "
+      >
+
+      <h1>Dan's Website</h1>
+
+      <ul class="navbar">
+        <li class="navbar"><a href="/blog/">Blog</a></li>
+        <li class="navbar"><a href="/calculator/">Calculator</a></li>
+        <li class="navbar"><a href="/about/">About</a></li>
+      </ul>
+
+      <br />
+
+      {% block content %}{% endblock %}
+
+  </div>
+  <footer>
+    Thanks GitHub Pages for hosting this website <red>&#10084;</red>
+  </footer>
+</html>

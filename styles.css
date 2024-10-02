@@ -1,0 +1,48 @@
+footer {
+  font-size: 0.75rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+footer red {
+  color: red;
+}
+
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li.navbar {
+  float: left;
+}
+
+li.navbar a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+@media only screen and (min-width: 992px) {
+  .device-padded {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+.flex-wrapper {
+  display: flex;
+  min-height: 98vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
