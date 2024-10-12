@@ -15,6 +15,10 @@
 
 ![Trailing Characters](image.png)
 
+- Integrate monit into the startup script
+- Integrate start-stop-daemon
+- Build docker image
+
 ## Notes
 
 - Shift + Alt + f will format HTML code. Used Prettier VS Code extension to improve this.

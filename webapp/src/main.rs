@@ -57,10 +57,14 @@ fn not_found(req: &Request) -> String {
     format!("Oh no! We couldn't find the requested path '{}'", req.uri())
 }
 
-#[launch]
-fn rocket() -> _ {
-    rocket::build()
+#[rocket::main]
+async fn main() -> Result<(), rocket::Error> {
+    let _rocket = rocket::build()
         .register("/", catchers![not_found])
         .attach(Template::fairing())
         .mount("/", routes![index, blog, read_path, about])
+        .launch()
+        .await?;
+
+    Ok(())
 }
