@@ -36,6 +36,7 @@
 
   </div>
   <footer>
-    Thanks GitHub Pages for hosting this website <red>&#10084;</red>
+    <del>Thanks GitHub Pages for hosting this website <red>&#10084;</red></del><br>
+    Thanks to my own dang self for paying DigitalOcean to host this website <red>&#10084;</red>
   </footer>
 </html>
