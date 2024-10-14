@@ -1,6 +1,37 @@
 {% extends "base" %} {% block content %}
 
 <div class="device-padded" style="text-align: justify; float: left">
+  <h3>2024-10-13</h3>
+
+  <p>
+    Well I didn't expect it to take this much, but I guess it was going to happen
+    sooner or later. I set up a Droplet on DigialOcean to host the webapp. I also 
+    figured out how to use Tera with Rocket, which is a template engine for HTML.
+    It apparently stiches together HTML at request time, which can be very powerful
+    for reading databases or other file-based data. For now, I'm just using it to
+    re-use HTML blocks, like the navigation and heading bar and the first blog
+    post for the about page. Still haven't done the calculator yet hah.
+  </p>
+
+  <p>
+    It took me awhile to figure out how to set up the webapp correctly; logging,
+    deployment, file and directory structure. I set up a Docker image for the 
+    webapp, copying the resulting release binary and website contents into a
+    working directory in the Docker image. I also wrote a script to deploy it
+    to the Droplet server. It builds the webapp, stops the existing contianer, loads
+    the new one then starts the container again. I save the container ID into a file 
+    so its easy to stop for the next deployment.
+  </p>
+
+  <p> 
+    I store the key for the admin on my local machine but check everything else
+    in. I assume there are better, more secure ways to do all of these things, 
+    but it works for now. This felt lot a big leap to go from hosting static
+    pages on github to running my own webapp on a VPS. I will say that I think 
+    this will provide a pretty solid base for future features and potentially
+    apps ran off the website, if I ever get there.
+  </p>
+
   <h3>2024-09-25</h3>
 
   <p>Houston, we have liftoff... &#128640;</p>
